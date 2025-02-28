@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>《长长的回廊》话剧剧本大纲</title>
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            background-color: #111;
+            color: #ddd;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #000;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #e4799d;
+            text-decoration: none;
+        }
+
+        .main-content {
+            padding: 20px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .scene {
+            margin-bottom: 30px;
+            border: 1px solid #444;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+            background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+        }
+
+        .scene h2 {
+            color: #e4799d;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        .scene p {
+            color: #ddd;
+        }
+
+        footer {
+            background-color: #000;
+            color: #ddd;
+            text-align: center;
+            padding: 10px;
+            border-top: 1px solid #444;
+        }
+
+        /* 悬疑氛围的动画效果 */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* 人物关系图样式 */
+        .character-map {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20px 0;
+        }
+
+        .character {
+            background-color: #333;
+            border: 1px solid #444;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+
+        .character h3 {
+            color: #e4799d;
+            margin: 0;
+        }
+
+        .character p {
+            margin: 5px 0;
+        }
+
+        .relationship-line {
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #444;
+            z-index: -1;
+        }
+
+        .relationship-label {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #e4799d;
+            font-size: 0.9em;
+            z-index: 1;
+        }
+
+        .relationship-line::before,
+        .relationship-line::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            background-color: #e4799d;
+            border-radius: 50%;
+        }
+
+        .relationship-line::before {
+            left: 0;
+        }
+
+        .relationship-line::after {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <header>
+        <h1>《长长的回廊》话剧剧本大纲</h1>
+        <nav>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#characters">主要角色</a></li>
+                <li><a href="#scenes">剧情章节</a></li>
+                <li><a href="#">创作背景</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 主体内容 -->
+    <div class="main-content fade-in">
+        <h2 id="characters">主要角色</h2>
+        <div class="character-map">
+            <div class="character" style="top: 0;">
+                <h3>桐生枝梨子</h3>
+                <p>主角，火灾幸存者，誓要找出真相。</p>
+                <div class="relationship-line">
+                    <div class="relationship-label">恋人</div>
+                </div>
+            </div>
+            <div class="character" style="top: 50px;">
+                <h3>二郎</h3>
+                <p>桐生枝梨子的恋人，火灾中的受害者。</p>
+            </div>
+            <div class="character" style="top: 100px; left: 50%;">
+                <h3>服务员</h3>
+                <p>酒店服务员，行为可疑，与火灾有关。</p>
+                <div class="relationship-line">
+                    <div class="relationship-label">联系</div>
+                </div>
+            </div>
+            <div class="character" style="top: 150px; left: 50%;">
+                <h3>神秘人物</h3>
+                <p>与服务员有频繁联系，可能是幕后黑手。</p>
+            </div>
+        </div>
+
+        <h2 id="scenes">剧情章节</h2>
+        <div class="scene">
+            <h2>第一幕：火灾前夕</h2>
+            <p>在豪华的回廊亭酒店里，一场看似平常的聚会正在进行。女主桐生枝梨子满心欢喜地等待着与神秘恋人二郎的见面，她不知道，危险正悄悄降临......</p>
+        </div>
+        <div class="scene">
+            <h2>第二幕：火海逃生</h2>
+            <p>酒店突然燃起大火，混乱中桐生枝梨子发现二郎已遇害，自己也被人残忍地毁容。在生死边缘挣扎的她，发誓要找出幕后黑手...</p>
+        </div>
+        <div class="scene">
+            <h2>第三幕：乔装归来</h2>
+            <p>经过漫长的治疗和精心伪装，桐生枝梨子以富商遗孀的身份重回回廊亭酒店。她不动声色地接近当年聚会的相关人员，暗中观察每个人的言行举止，试图从他们的反应中找到线索。</p>
+        </div>
+        <div class="scene">
+            <h2>第四幕：初露端倪</h2>
+            <p>在与众人的接触中，桐生枝梨子发现了一些蛛丝马迹。某个看似不起眼的服务员在提及当年火灾时眼神闪烁，行为举止也十分怪异。她开始重点调查这个服务员，逐渐揭开了一些不为人知的秘密。</p>
+        </div>
+        <div class="scene">
+            <h2>第五幕：深入调查</h2>
+            <p>桐生枝梨子通过各种手段搜集证据，发现服务员与一名神秘人物有频繁的联系。她决定跟踪这名服务员，希望能找到更多线索。</p>
+        </div>
+        <div class="scene">
+            <h2>第六幕：真相浮出水面</h2>
+            <p>在一次偶然的机会下，桐生枝梨子发现了服务员与当年火灾之间的直接联系。她设下陷阱，最终让服务员和背后的主谋暴露无遗。真相大白后，她终于为二郎报了仇。</p>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer>
+        &copy; 2025 《长长的回廊》话剧剧本大纲展示网站
+    </footer>
+</body>
+
+</html>
